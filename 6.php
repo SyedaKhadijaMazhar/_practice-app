@@ -16,13 +16,16 @@
 
 	<?php  
 
-/*  Step1: Make a form that submits one value to POST super global
-
-
- */
-
+if(isset($_POST['submit']))
+{
+	echo $username = $_POST['name'];
+}
 	
 ?>
+<form action="6.php" method="post">
+<input type="text" name="name" placeholder="Enter your name:">
+<input type="submit" name="submit">
+</form>
 
 
 </article><!--MAIN CONTENT-->
